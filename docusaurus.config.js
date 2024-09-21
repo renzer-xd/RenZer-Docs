@@ -13,18 +13,19 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://docs.renzershop.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/cfg',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'renzer-xd', // Usually your GitHub org/user name.
-  projectName: 'RenZer Docs', // Usually your repo name.
+  projectName: 'RenZer-Docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenAnchors: 'throw',
+  onBrokenMarkdownLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -44,6 +45,7 @@ const config = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           routeBasePath: '/',
+          editUrl: 'https://github.com/renzer-xd/RenZer-Docs/edit/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -56,14 +58,36 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      colorMode: {
+        defaultMode: 'dark'
+      },
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'RenZer Developer Docs',
         logo: {
-          alt: 'Air Team Docs Logo',
+          alt: 'RenZer Developer Logo',
           src: 'img/logo.png',
         },
-        items: [],
+        items: [
+          {
+            href: 'https://cfg.renzershop.com',
+            position: 'right',
+            className: 'header-home-link',
+            'aria-label': 'Home',
+          },
+          {
+            href: 'https://discord.gg/CgzETuC44',
+            position: 'right',
+            className: 'header-discord-link',
+            'aria-label': 'Discord',
+          },
+          {
+            href: 'https://github.com/renzer-xd',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub',
+          },
+        ],
       },
       footer: {
         style: 'dark',
@@ -71,9 +95,24 @@ const config = {
       },
       prism: {
         theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+        darkTheme: prismThemes.vsDark,
+        additionalLanguages: [
+          'lua',
+          'javascript',
+          'js-extras',
+          'php',
+          'php-extras',
+          'sql',
+          'mongodb',
+          'powershell',
+          'bash',
+          'json',
+          'diff',
+          'uri',
+        ]
       },
     }),
+
 };
 
 export default config;

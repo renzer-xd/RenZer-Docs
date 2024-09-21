@@ -32,12 +32,20 @@ const sidebars = {
       collapsed: false,
       items: [
         {
-          type: 'link',
-          label: 'Oncoming',
-          href: '#',
-        },
+          type: 'doc',
+          label: 'GCPhone',
+          id: 'script/gcphone/index',
+         /*  link: {
+            type: 'doc',
+            id: 'script/gcphone/index',
+          },
+          items: [
+            'script/gcphone/install'
+          ] */
+        }
       ]
-    }
+    },
+    
     // Normal syntax:
     /* {
       type: 'doc',
