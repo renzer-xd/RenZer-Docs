@@ -7,9 +7,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 const repo = process.env.GITHUB_REPOSITORY?.split('/') ?? [];
 const repoOwner = repo[0] ?? 'RenZer';
 const repoName = repo[1] ?? 'RenZer-Docs';
-const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
-const siteUrl = isGitHubActions ? `https://${repoOwner}.github.io` : 'https://your-docusaurus-site.example.com';
-const siteBaseUrl = isGitHubActions ? `/${repoName}/` : '/';
+const isGitHubPagesRepo = Boolean(process.env.GITHUB_REPOSITORY);
+const siteUrl = isGitHubPagesRepo ? `https://${repoOwner}.github.io` : 'https://your-docusaurus-site.example.com';
+const siteBaseUrl = isGitHubPagesRepo ? `/${repoName}/` : '/';
 
 const config: Config = {
   title: 'RenZer Docs',
