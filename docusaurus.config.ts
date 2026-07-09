@@ -4,6 +4,13 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const repo = process.env.GITHUB_REPOSITORY?.split('/') ?? [];
+const repoOwner = repo[0] ?? 'RenZer';
+const repoName = repo[1] ?? 'RenZer-Docs';
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+const siteUrl = isGitHubPages ? `https://${repoOwner}.github.io` : 'https://your-docusaurus-site.example.com';
+const siteBaseUrl = isGitHubPages ? `/${repoName}/` : '/';
+
 const config: Config = {
   title: 'RenZer Docs',
   tagline: 'คลังเก็บข้อมูล บันทึกความรู้ และการเรียนรู้ส่วนตัวของ RenZer',
@@ -15,15 +22,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: siteUrl,
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // For GitHub pages deployment, it is often '/<projectName>/'.
+  baseUrl: siteBaseUrl,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'RenZer', // Usually your GitHub org/user name.
-  projectName: 'RenZer-Docs', // Usually your repo name.
+  organizationName: repoOwner, // Usually your GitHub org/user name.
+  projectName: repoName, // Usually your repo name.
 
   onBrokenLinks: 'throw',
 

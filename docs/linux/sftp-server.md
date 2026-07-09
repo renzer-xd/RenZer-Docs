@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 10
 title: การตั้งค่าและใช้งาน SFTP Server
 sidebar_label: 10. การตั้งค่าและใช้งาน SFTP Server
 description: คู่มือการติดตั้งและตั้งค่า SFTP Server บน Ubuntu อย่างละเอียด ครอบคลุม Chroot Jail, SSH Key ส่วนกลาง และการใช้งานกับ Client ต่างๆ

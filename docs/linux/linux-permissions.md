@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 id: linux-permissions
 title: สิทธิ์และการกำหนดสิทธิ์ไฟล์ใน Linux (Ubuntu)
 sidebar_label: 4. สิทธิ์ไฟล์ (Permissions)

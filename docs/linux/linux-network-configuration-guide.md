@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 7
 title: คู่มือการตั้งค่าและตรวจเช็คเครือข่าย
 sidebar_label: 7. คู่มือการตั้งค่าและตรวจเช็คเครือข่าย
 description: คู่มือการใช้งาน Network Configuration, DNS, Firewall และการแก้ไขปัญหาเครือข่ายบน Linux Ubuntu อย่างละเอียด ครอบคลุม Netplan, ip, ping, traceroute, UFW

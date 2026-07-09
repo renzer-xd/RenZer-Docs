@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 title: คู่มือการดูและแก้ไขไฟล์ข้อมูล
 sidebar_label: 6. คู่มือการดูและแก้ไขไฟล์ข้อมูล
 description: คู่มือการใช้งานคำสั่งและ Text Editor สำหรับดูและแก้ไขไฟล์บน Linux Ubuntu อย่างละเอียด ครอบคลุม cat, less, head, tail, nano, vim และเครื่องมือประมวลผลข้อความ

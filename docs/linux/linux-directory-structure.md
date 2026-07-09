@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 id: linux-directory-structure
 title: โครงสร้างโฟลเดอร์ใน Linux (Ubuntu)
 sidebar_label: 1. โครงสร้างโฟลเดอร์

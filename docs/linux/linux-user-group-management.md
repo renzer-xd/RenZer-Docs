@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 8
 id: linux-user-group-management
 title: การจัดการผู้ใช้งานและกลุ่มระบบ (User & Group Management) ใน Linux (Ubuntu)
 sidebar_label: 8. จัดการ User & Group

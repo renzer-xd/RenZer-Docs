@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 id: linux-file-management
 title: การจัดการไฟล์และโฟลเดอร์ใน Linux (Ubuntu)
 sidebar_label: 2. การจัดการไฟล์และโฟลเดอร์

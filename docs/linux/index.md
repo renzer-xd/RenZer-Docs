@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: วิธีติดตั้ง OS Ubuntu Server
 ---
 

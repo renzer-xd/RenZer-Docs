@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 id: linux-system-services
 title: คำสั่งควบคุมระบบและบริการ (Services) ใน Linux (Ubuntu)
 sidebar_label: 3. ควบคุมระบบและ Services
